@@ -1,0 +1,112 @@
+.carousel{
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.carousel .banner{
+  position: relative;
+}
+.carousel .banner>.slide>.list{
+  width: 100%;
+  height: 420px;
+}
+.carousel .banner>.slide>.list>.item{
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 420px;
+  background-image: url("../images/banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel .banner>.slide>.list>.active{
+  opacity:1;
+}
+.carousel .banner>.slide>.list>.item:nth-child(2){
+  background-image: url("../images/banner2.jpg");
+  margin-left: -4px;
+}
+.carousel .banner>.slide>.list>.item:nth-child(3){
+  background-image: url("../images/banner3.jpg");
+  margin-left: -4px;
+}
+.carousel .banner>.point{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.carousel .banner>.point>.pointList{
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+}
+.carousel .banner>.point>.pointList>.pointItem{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 100%;
+}
+.carousel .banner>.point>.pointList>.active{
+  background: white;
+}
+.carousel .banner>.point>.pointList>.pointItem:nth-child(2){
+  margin: 0 5px;
+}
+.carousel .sideNav{
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  background: #757881;
+}
+.carousel .sideNav>.navList>.navItem{
+  height: 42px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  line-height: 42px;
+}
+.carousel .sideNav>.navList>.navItem:hover{
+  background-color: rgba(75,78,81,0.5);
+}
+.carousel .sideNav>.navList>.navItem:hover>.detailUl{
+  display: block;
+}
+.carousel .sideNav>.navList>.navItem>.navItemA{
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+}
+.carousel .sideNav>.navList>.navItem>span{
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+}
+.carousel .sideNav>.navList>.navItem>.detailUl{
+  width: 180px;
+  height: 420px;
+  background: rgba(255,255,255,0.9);
+  position: absolute;
+  top: 0;
+  left: 180px;
+  display: none;
+}
+.carousel .sideNav>.navList>.navItem>.detailUl>.detailLi{
+  height: 42px;
+  box-sizing: border-box;
+  line-height: 42px;
+  text-align: center;
+}
+.carousel .sideNav>.navList>.navItem>.detailUl>.detailLi>a{
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+.carousel .sideNav>.navList>.navItem>.detailUl>.detailLi>a:hover{
+  color: red;
+}
